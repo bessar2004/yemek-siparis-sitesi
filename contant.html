@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>İletişim</title>
+
+  <link rel="stylesheet" href="reng.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+<header class="header">
+  <a href="site.html" class="logo">
+    <img src="seff.jpg" alt="logo">
+  </a>
+
+  <nav class="navbar">
+    <a href="site.html">Ana Sayfa</a>
+  
+    <a href="contant.html" class="active">İletişim</a>
+    <a href="hakkimizda.html">Hakkımızda</a>
+  </nav>
+</header>
+
+<section class="contact-page">
+  <h1 class="heading">Bizimle <span>İletişime Geçin</span></h1>
+
+  <div class="contact-page-container">
+
+    <div class="contact-details">
+      <h3>İletişim Bilgilerimiz</h3>
+   
+      <p><i class="fas fa-envelope"></i> Getirdinmi@gmail.com</p>
+      <p><i class="fas fa-map-marker-alt"></i> Ankara, Türkiye</p>
+      
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3060.9436766461235!2d32.859741875422585!3d39.920805571535655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14d34f979f0fb4cb%3A0xa4b5d9a0be2b47ed!2sAnkara!5e0!3m2!1str!2str!4v1714400000000!5m2!1str!2str" 
+        width="100%" 
+        height="250" 
+        style="border:0; border-radius:1rem; margin-top:1rem;" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+<form action="mesaj_kaydet.php" method="POST" class="contact-form">
+  <h3>Bize Mesaj Bırakın</h3>
+
+  <input type="text" name="ad" placeholder="Adınız" class="input-box" required>
+  <input type="email" name="email" placeholder="E-posta" class="input-box" required>
+  <textarea name="mesaj" placeholder="Mesajınız" class="input-box" rows="5" required></textarea>
+
+  <button type="submit" class="order-btn">Gönder</button>
+</form>
+
+
+  </div>
+</section>
+
+</body>
+</html>

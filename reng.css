@@ -1,0 +1,1110 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+:root {
+
+    --main-color: #e84242;
+    --black-color:#121212;
+     --border:0.1rem solid rgba(255,255,255,0.4);
+
+
+}
+
+
+
+
+
+*{
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+margin:0 ;
+padding:0 ;
+box-sizing: border-box;
+outline: none;
+border :none;
+text-decoration: none;
+text-transform: capitalize;
+transition:0.2s ease ;
+}
+
+
+/* base html codes */
+html{
+
+font-size: 62.5%;
+
+scroll-padding-top: 9rem;
+scroll-behavior: smooth;
+
+
+}
+
+
+html::-webkit-scrollbar{
+
+width: 0.8rem;
+background-color: white;
+
+
+
+}
+
+
+html::-webkit-scrollbar-thumb{
+border-radius:3rem;
+  background-color:var(--black-color);
+  
+  }
+
+  html::-webkit-scrollbar-track{
+background-color: transparent;
+
+
+
+  }
+
+
+
+
+
+/*! header start */
+
+
+.logo {
+    display: flex;
+    align-items: center;
+    padding-left: 2rem;
+}
+
+.logo img{
+
+    height: 60px;
+    width: 60px;
+    border-radius: 50%; /* TAM YUVARLAK */
+    object-fit: cover; /* Görüntüyü kırparak orantılı şekilde oturtur */
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1); /* hafif gölge */
+
+}
+
+.header{
+
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.7%;
+    margin: 0 auto;
+    border-radius: 30rem;
+    box-shadow: 0px 0px 17px -2px rgba(0, 0, 0, 0.75);
+    position: fixed; /* BU! */
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    width: 85%;
+
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+
+background-color: var(--main-color);
+
+}
+
+section{
+padding: 3.5rem 7%;
+
+}
+
+.btn{
+
+margin-top: 1rem;
+display: inline-block;
+padding: 2rem 3.75rem;
+border-radius: 30rem;
+font-size: 1.7rem;
+color: white;
+background-color: var(--black-color);
+
+cursor: pointer;
+
+
+
+
+}
+
+.header .navbar a {
+    margin: 0 1rem;
+    font-size: 1.6rem;
+    color: var(--black-color);
+    border-bottom: 0.1rem solid transparent;
+}
+
+
+
+.header .navbar .active,
+
+.header .navbar a:hover {
+
+
+border-color: var(--main-color);
+ 
+padding-bottom: 0.5rem;
+
+
+
+
+}
+.header .buttons button {
+    cursor: pointer;
+    font-size: 2.5rem;
+    margin-left: 2rem;
+    background-color: transparent;
+}
+
+
+
+/* !header end */
+
+/* !home start */
+
+.home{
+    height: 100vh;
+    background-image: url("yemek.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10rem; /* header kadar boşluk ver */
+
+
+
+}
+
+
+
+.home .content {
+    max-width: 60rem;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+    color: white;
+}
+
+.home .content h3 {
+    font-size: 5rem;
+    font-weight: 600;
+    line-height: 1.2;
+    color: white;
+    margin-bottom: 1.9rem;
+    margin-top: 3rem;
+}
+
+.home .content p {
+    font-size: 2rem;
+    font-weight: 300;
+    line-height: 1.8;
+    color: white;
+    margin-bottom: 2rem;
+    line-height: 1.8;
+    padding: 1rem 0;
+
+}
+
+
+
+/* !home end */
+
+/* !menu   start */
+
+    .menu .box-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+        gap: 2rem;
+      }
+
+
+
+      .box {
+        background-color: white;
+        border-radius: 1rem;
+        overflow: hidden;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        transition: transform 0.3s ease;
+      }
+      
+      .box:hover {
+        transform: scale(1.02);
+      }
+
+      .box img {
+        width: 100%;
+        height: 20rem;
+        object-fit: cover;
+      }
+      .box-bottom {
+        padding: 1.5rem;
+        text-align: center;
+      }
+            
+
+      .menu h1 {
+        font-size: 4rem;
+        font-weight: 800;
+        color: white;
+        text-align: center;
+        margin-bottom: 4rem;
+        background-color: var(--black-color);
+        display: inline-block;
+        padding: 1rem 3rem;
+        border-radius: 2rem;
+        box-shadow: 0 0 20px rgba(0,0,0,0.5);
+        letter-spacing: 0.2rem;
+        text-transform: uppercase;
+        border-bottom: 3px solid var(--black-color);
+      }
+    
+      .menu h1 span {
+        border-bottom: 3px solid var(--main-color);
+        display: inline-block;
+        padding-bottom: 0.5rem;
+      }
+      
+
+
+      .box h3 {
+        font-size: 2rem;
+        font-weight: 600;
+        color: #333;
+        margin: 1rem 0;
+        text-align: center;
+      }
+      
+      .box .price {
+        font-size: 1.8rem;
+        font-weight: bold;
+        color: var(--main-color);
+        text-align: center;
+      }
+      
+      .box .price span {
+        font-size: 1.4rem;
+        color: #999;
+        text-decoration: line-through;
+        margin-left: 1rem;
+      }
+
+
+      .products h1 {
+        font-size: 4rem;
+        font-weight: 800;
+        color: white;
+        text-align: center;
+        margin-bottom: 4rem;
+        background-color: var(--black-color);
+        display: inline-block;
+        padding: 1rem 3rem;
+        border-radius: 2rem;
+        box-shadow: 0 0 20px rgba(0,0,0,0.5);
+        letter-spacing: 0.2rem;
+        text-transform: uppercase;
+      }
+      
+      .products h1 span {
+        border-bottom: 3px solid var(--main-color);
+        display: inline-block;
+        padding-bottom: 0.5rem;
+      }
+      
+.products.box-container.box{
+
+text-align: center;
+
+background-color: white;
+position: relative;
+
+border-radius:3rem ;
+height: 60rem;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+padding: 3rem;
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+      
+
+
+/* !menu end */
+
+
+.products .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 2rem;
+  margin-top: 4rem;
+}
+.products .box {
+  background-color: white;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.products .box img {
+  width: 100%;
+  height: 20rem;
+  object-fit: cover;
+}
+.products .box-head {
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.products .box-bottom {
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.products .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 2rem;
+  margin-top: 4rem;
+}
+
+.products .box {
+  background-color: white;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.products .box img {
+  width: 100%;
+  height: 20rem;
+  object-fit: cover;
+}
+
+.products .box-head {
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.products .box-bottom {
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.products .box {
+  background: linear-gradient(135deg, #ffffff, #f5f5f5); /* Hafif arka plan */
+  border-radius: 2rem;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15); /* Hafif gölge */
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.products .box:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+}
+
+.products .box img {
+  width: 100%;
+  height: 20rem;
+  object-fit: cover;
+  border-bottom: 2px solid var(--main-color);
+}
+
+.products .box-head {
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.products .box-head .title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--black-color);
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.products .box-head .name {
+  font-size: 1.5rem;
+  color: #666;
+}
+
+.products .box-bottom {
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.products .box-bottom .info .price {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--main-color);
+}
+
+.products .box-bottom .product-btn a {
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 1.2rem 2.5rem;
+  border-radius: 50rem;
+  background: var(--black-color);
+  color: white;
+  font-size: 1.6rem;
+  transition: background 0.4s;
+}
+
+.products .box-bottom .product-btn a:hover {
+  background: var(--main-color);
+}
+
+
+/* ! Footer start */
+
+.footer {
+  background-color: var(--black-color);
+  color: white;
+  padding: 5rem 7% 2rem;
+  margin-top: 5rem;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  gap: 3rem;
+  margin-bottom: 3rem;
+}
+
+.footer-box h3 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: var(--main-color);
+}
+
+.footer-box p, .footer-box a {
+  font-size: 1.5rem;
+  color: #ccc;
+  margin-bottom: 1rem;
+  display: block;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-box a:hover {
+  color: var(--main-color);
+}
+
+.footer-credit {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #aaa;
+  border-top: 0.1rem solid rgba(255, 255, 255, 0.2);
+  padding-top: 2rem;
+}
+
+/* ! Footer end */
+
+
+
+/* ! Yorumlar start */
+
+.reviews {
+  padding: 5rem 7%;
+  background-color: #f8f8f8;
+}
+
+.reviews .heading {
+  text-align: center;
+  font-size: 4rem;
+  margin-bottom: 4rem;
+  color: var(--black-color);
+}
+
+.reviews .heading span {
+  border-bottom: 3px solid var(--main-color);
+  padding-bottom: 0.5rem;
+}
+
+.reviews-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
+  gap: 2.5rem;
+}
+
+.review-box {
+  background: white;
+  border-radius: 1.5rem;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.review-box:hover {
+  transform: translateY(-10px);
+}
+
+.review-user {
+  width: 8rem;
+  height: 8rem;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+.review-box h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: var(--main-color);
+}
+
+.review-box p {
+  font-size: 1.6rem;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+.stars {
+  color: #ffd700;
+  font-size: 2rem;
+}
+
+/* ! Yorumlar end */
+/* ! iletişim ve sipariş start */
+
+.contact {
+  padding: 5rem 7%;
+  background-color: #fff;
+}
+
+.contact .heading {
+  text-align: center;
+  font-size: 4rem;
+  margin-bottom: 4rem;
+  color: var(--black-color);
+}
+
+.contact .heading span {
+  border-bottom: 3px solid var(--main-color);
+  padding-bottom: 0.5rem;
+}
+
+.contact-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 3rem;
+  align-items: start;
+}
+
+.contact-info {
+  background: #f5f5f5;
+  border-radius: 1.5rem;
+  padding: 3rem;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.contact-info h3 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: var(--main-color);
+}
+
+.contact-info p {
+  font-size: 1.6rem;
+  color: #555;
+  margin: 1rem 0;
+}
+
+.contact-info i {
+  color: var(--main-color);
+  margin-right: 0.8rem;
+}
+
+.contact-form {
+  background: #f5f5f5;
+  border-radius: 1.5rem;
+  padding: 3rem;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.contact-form h3 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: var(--main-color);
+}
+
+.input-box {
+  width: 100%;
+  padding: 1.2rem;
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+  border-radius: 1rem;
+  border: 1px solid #ddd;
+  background: white;
+}
+
+.contact-form textarea.input-box {
+  resize: none;
+}
+
+.contact-form .btn {
+  background: var(--main-color);
+  color: white;
+  border: none;
+  font-size: 1.7rem;
+  padding: 1.5rem 3rem;
+  border-radius: 50rem;
+  cursor: pointer;
+}
+
+.contact-form .btn:hover {
+  background: var(--black-color);
+}
+
+/* ! iletişim ve sipariş end */
+/* ! iletişim ve sipariş bölümü */
+
+.contact {
+  padding: 5rem 7%;
+  background-color: #fff;
+}
+
+.contact .heading {
+  text-align: center;
+  font-size: 4rem;
+  margin-bottom: 4rem;
+  color: var(--black-color);
+}
+
+.contact .heading span {
+  border-bottom: 3px solid var(--main-color);
+  padding-bottom: 0.5rem;
+}
+
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+
+.contact-info, .contact-form {
+  flex: 1 1 45rem;
+  background: #f5f5f5;
+  padding: 3rem;
+  border-radius: 1.5rem;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+.contact-info h3,
+.contact-form h3 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: var(--main-color);
+}
+
+.contact-info p {
+  font-size: 1.6rem;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+.contact-info i {
+  color: var(--main-color);
+  margin-right: 0.8rem;
+}
+
+.contact-form label {
+  font-size: 1.6rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.input-box {
+  width: 100%;
+  padding: 1.2rem;
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+  border-radius: 1rem;
+  border: 1px solid #ddd;
+  background: white;
+}
+
+.contact-form textarea.input-box {
+  resize: none;
+}
+
+.contact-form .btn {
+  background: var(--main-color);
+  color: white;
+  border: none;
+  font-size: 1.7rem;
+  padding: 1.5rem 3rem;
+  border-radius: 50rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.contact-form .btn:hover {
+  background: var(--black-color);
+}
+
+/* Responsive: küçük ekranda alt alta gelsin */
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+  }
+}
+
+/* ! sipariş sayfası */
+
+.order-page {
+  padding: 12rem 7% 5rem;
+  background: var(--main-color);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.order-page .heading {
+  text-align: center;
+  font-size: 4rem;
+  margin-bottom: 4rem;
+  color: white;
+}
+
+.order-page .heading span {
+  border-bottom: 3px solid var(--black-color);
+  padding-bottom: 0.5rem;
+}
+
+.order-form {
+  background: white;
+  padding: 4rem;
+  border-radius: 2rem;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  width: 100%;
+  max-width: 600px;
+}
+
+.form-group {
+  margin-bottom: 2rem;
+}
+
+.form-group label {
+  display: block;
+  font-size: 1.7rem;
+  color: var(--black-color);
+  margin-bottom: 0.5rem;
+}
+
+.input-box {
+  width: 100%;
+  padding: 1.2rem;
+  border-radius: 1rem;
+  border: 1px solid #ccc;
+  font-size: 1.5rem;
+}
+
+.order-btn {
+  width: 100%;
+  padding: 1.5rem;
+  background: var(--main-color);
+  color: white;
+  font-size: 1.8rem;
+  border: none;
+  border-radius: 50rem;
+  cursor: pointer;
+  margin-top: 2rem;
+  transition: background 0.3s;
+  text-align: center;
+}
+
+.order-btn:hover {
+  background: var(--black-color);
+}
+
+
+/* ! contact sayfası */
+
+.contact-page {
+  padding: 12rem 7% 5rem;
+  background: #fff;
+}
+
+.contact-page .heading {
+  text-align: center;
+  font-size: 4rem;
+  margin-bottom: 4rem;
+  color: var(--black-color);
+}
+
+.contact-page .heading span {
+  border-bottom: 3px solid var(--main-color);
+  padding-bottom: 0.5rem;
+}
+
+.contact-page-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+
+.contact-details, .contact-form {
+  flex: 1 1 45rem;
+  background: #f5f5f5;
+  padding: 3rem;
+  border-radius: 1.5rem;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+.contact-details h3,
+.contact-form h3 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: var(--main-color);
+}
+
+.contact-details p {
+  font-size: 1.6rem;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+.contact-details i {
+  color: var(--main-color);
+  margin-right: 0.8rem;
+}
+
+.contact-form .input-box {
+  width: 100%;
+  padding: 1.2rem;
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+  border-radius: 1rem;
+  border: 1px solid #ddd;
+  background: white;
+}
+
+.contact-form textarea.input-box {
+  resize: none;
+}
+
+.contact-form .order-btn {
+  background: var(--main-color);
+  color: white;
+  border: none;
+  font-size: 1.7rem;
+  padding: 1.5rem 3rem;
+  border-radius: 50rem;
+  cursor: pointer;
+  margin-top: 2rem;
+  transition: background 0.3s;
+}
+
+.contact-form .order-btn:hover {
+  background: var(--black-color);
+}
+
+@media (max-width: 768px) {
+  .contact-page-container {
+    flex-direction: column;
+  }
+}
+
+
+/* ! hakkımızda sayfası */
+
+.about-page {
+  padding: 12rem 7% 5rem;
+  background: url('desenli-arka-plan.png') repeat; 
+  background-size: cover;
+  min-height: 100vh;
+  text-align: center;
+}
+
+.about-page .heading {
+  font-size: 4rem;
+  color: var(--black-color);
+  margin-bottom: 4rem;
+}
+
+.about-page .heading span {
+  border-bottom: 3px solid var(--main-color);
+  padding-bottom: 0.5rem;
+}
+
+.about-content p {
+  font-size: 1.8rem;
+  color: #333;
+  line-height: 1.8;
+  max-width: 900px;
+  margin: 0 auto 4rem;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.mission-vision {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  justify-content: center;
+}
+
+.mission, .vision {
+  flex: 1 1 30rem;
+  background: white;
+  padding: 2.5rem;
+  border-radius: 1.5rem;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.mission h3, .vision h3 {
+  font-size: 2.2rem;
+  color: var(--main-color);
+  margin-bottom: 1rem;
+}
+
+.mission p, .vision p {
+  font-size: 1.6rem;
+  color: #555;
+}
+
+/* küçük ekranlar için */
+@media (max-width: 768px) {
+  .mission-vision {
+    flex-direction: column;
+  }
+}
+
+.mobile-menu {
+  position: fixed;
+  top: 70px; /* Header altında */
+  right: 3.5rem; /* Butona daha yakın */
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  display: none;
+  flex-direction: column;
+  z-index: 999;
+}
+
+
+
+.mobile-menu a {
+  display: block;
+  font-size: 1.6rem;
+  color: var(--black-color);
+  text-align: left;
+  margin-bottom: 1rem;
+  transition: color 0.3s;
+}
+
+.mobile-menu a:hover {
+  color: var(--main-color);
+}
+/* ! Hakkımızda Sayfası */
+
+.about-page {
+  padding: 10rem 7% 6rem;
+  background-color: #fff;
+}
+
+.about-page .heading {
+  text-align: center;
+  font-size: 4rem;
+  margin-bottom: 3rem;
+  color: var(--black-color);
+  padding-top: 6rem;
+}
+
+.about-page .heading span {
+  color: var(--main-color);
+  border-bottom: 3px solid var(--main-color);
+  padding-bottom: 0.5rem;
+}
+
+.about-content {
+  max-width: 900px;
+  margin: 0 auto;
+  background: #f9f9f9;
+  padding: 3rem;
+  border-radius: 2rem;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  font-size: 1.8rem;
+  line-height: 1.8;
+  color: #333;
+}
+
+.about-content p {
+  margin-bottom: 2rem;
+}
+
+.mission-vision {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.mission, .vision {
+  background-color: #fff;
+  padding: 2rem;
+  border-left: 5px solid var(--main-color);
+  border-radius: 1.5rem;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+.mission h3, .vision h3 {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+  color: var(--main-color);
+}
+
+.mission p, .vision p {
+  font-size: 1.6rem;
+  color: #444;
+}
+
