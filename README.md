@@ -7,9 +7,9 @@ Bu proje, kullanıcıların çevrim içi olarak yemek siparişi verebildiği, PH
 
 1- Projede Kullandığımız Teknolojiler
 
-HTML5 – Sayfa iskeleti ve formlar
+HTML – Sayfa iskeleti ve formlar
 
-CSS3 – Görsel tasarım ve responsive yapı
+CSS – Görsel tasarım ve responsive yapı
 
 JavaScript – (Opsiyonel olarak kullanılabilir) etkileşimli özellikler
 
